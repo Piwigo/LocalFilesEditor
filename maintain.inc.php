@@ -21,47 +21,23 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 
-define('PHPWG_ROOT_PATH', '../../');
-include_once(PHPWG_ROOT_PATH . 'include/common.inc.php');
-include_once(LOCALEDIT_PATH.'functions.inc.php');
-load_language('plugin.lang', LOCALEDIT_PATH);
-check_status(ACCESS_ADMINISTRATOR);
-
-if (isset($_GET['file']))
+function plugin_install()
 {
-  $path = $_GET['file'];
-  if (!is_admin() or (!substr_count($path, 'config_default.inc.php') and !substr_count($path, '.lang.php')))
-  {
-  	die('Hacking attempt!');
-  }
-    
-  $template->set_filename('show_default', dirname(__FILE__) . '/show_default.tpl');
-  
-  // Editarea
-  $editarea_options = array(
-    'syntax' => 'php',
-    'start_highlight' => true,
-    'allow_toggle' => false,
-    'is_editable' => false,
-    'language' => substr($user['language'], 0, 2));
+  global $prefixeTable;
 
-  $file = file_get_contents(PHPWG_ROOT_PATH . $path);
-  
-  $template->assign(array(
-    'DEFAULT_CONTENT' => $file,
-    'LOCALEDIT_PATH' => LOCALEDIT_PATH,
-    'LOAD_EDITAREA' => isset($conf['LocalFilesEditor']) ? $conf['LocalFilesEditor'] : 'on',
-    'EDITAREA_OPTIONS' => $editarea_options));
+  $query = '
+INSERT INTO ' . CONFIG_TABLE . ' (param,value,comment)
+VALUES ("LocalFilesEditor" , "off" , "LocalFiles Editor plugin parameters");';
 
-  $title = $path;
-  $page['page_banner'] = '<h1>'.str_replace('/', ' / ', $path).'</h1>';
-  $page['body_id'] = 'thePopuphelpPage';
+  pwg_query($query);
+}
 
-  include(PHPWG_ROOT_PATH.'include/page_header.php');
+function plugin_uninstall()
+{
+  global $prefixeTable;
 
-  $template->pparse('show_default');
-
-  include(PHPWG_ROOT_PATH.'include/page_tail.php');
+  $query = 'DELETE FROM ' . CONFIG_TABLE . ' WHERE param="LocalFilesEditor" LIMIT 1;';
+  pwg_query($query);
 }
 
 ?>

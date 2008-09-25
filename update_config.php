@@ -24,44 +24,23 @@
 define('PHPWG_ROOT_PATH', '../../');
 include_once(PHPWG_ROOT_PATH . 'include/common.inc.php');
 include_once(LOCALEDIT_PATH.'functions.inc.php');
-load_language('plugin.lang', LOCALEDIT_PATH);
 check_status(ACCESS_ADMINISTRATOR);
 
-if (isset($_GET['file']))
+$possible_values = array('on', 'off');
+
+if (isset($_POST['editarea']) and in_array($_POST['editarea'], $possible_values))
 {
-  $path = $_GET['file'];
-  if (!is_admin() or (!substr_count($path, 'config_default.inc.php') and !substr_count($path, '.lang.php')))
+  if (!isset($conf['LocalFilesEditor']))
   {
-  	die('Hacking attempt!');
+    include_once(LOCALEDIT_PATH.'maintain.inc.php');
+    plugin_install();
   }
-    
-  $template->set_filename('show_default', dirname(__FILE__) . '/show_default.tpl');
-  
-  // Editarea
-  $editarea_options = array(
-    'syntax' => 'php',
-    'start_highlight' => true,
-    'allow_toggle' => false,
-    'is_editable' => false,
-    'language' => substr($user['language'], 0, 2));
-
-  $file = file_get_contents(PHPWG_ROOT_PATH . $path);
-  
-  $template->assign(array(
-    'DEFAULT_CONTENT' => $file,
-    'LOCALEDIT_PATH' => LOCALEDIT_PATH,
-    'LOAD_EDITAREA' => isset($conf['LocalFilesEditor']) ? $conf['LocalFilesEditor'] : 'on',
-    'EDITAREA_OPTIONS' => $editarea_options));
-
-  $title = $path;
-  $page['page_banner'] = '<h1>'.str_replace('/', ' / ', $path).'</h1>';
-  $page['body_id'] = 'thePopuphelpPage';
-
-  include(PHPWG_ROOT_PATH.'include/page_header.php');
-
-  $template->pparse('show_default');
-
-  include(PHPWG_ROOT_PATH.'include/page_tail.php');
+  $query = '
+UPDATE ' . CONFIG_TABLE . '
+SET value = "' . $_POST['editarea'] . '"
+WHERE param="LocalFilesEditor"
+LIMIT 1';
+  pwg_query($query);
 }
 
 ?>
