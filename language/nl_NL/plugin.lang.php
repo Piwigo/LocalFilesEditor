@@ -23,32 +23,31 @@
 
 $lang['locfiledit_onglet_localconf'] = 'Lokale configuratie';
 $lang['locfiledit_onglet_css'] = 'CSS';
-$lang['locfiledit_onglet_tpl'] = 'Templates';
+$lang['locfiledit_onglet_tpl'] = 'Sjablonen';
 $lang['locfiledit_onglet_lang'] = 'Talen';
 $lang['locfiledit_onglet_plug'] = 'Persoonlijke Plugin';
-$lang['locfiledit_cant_save'] = 'Er kan niet naar het gebruikte bestand geschreven worden. Controleer of directory "local/" beschrijfbaar is (chmod).';
+$lang['locfiledit_cant_save'] = 'Er kan niet naar het gebruikte bestand geschreven worden. Controleer of de map "local/" beschrijfbaar is (chmod).';
 $lang['locfiledit_newfile'] = 'Het bestand bestaat niet totdat er hieronder informatie wordt ingevoerd. Zodra informatie wordt ingevoerd en opgeslagen, wordt het bestand aangemaakt.';
-$lang['locfiledit_save_config'] = 'Bestand succesvol beschreven.';
-$lang['locfiledit_show_default'] = 'Geef het referentie-bestand weer: ';
+$lang['locfiledit_save_config'] = 'Bestand succesvol opgeslagen.';
+$lang['locfiledit_show_default'] = 'Toon het referentie-bestand: ';
 $lang['locfiledit_save_bak'] = 'Bij het opslaan wordt een backup-bestand aangemaakt.';
 $lang['locfiledit_saved_bak'] = 'Backup-bestand aangemaakt (%s)';
 $lang['locfiledit_save_file'] = 'Opslaan bestand';
 $lang['locfiledit_choose_file'] = 'Kies het te wijzigen bestand';
 $lang['locfiledit_edit'] = 'Wijzig';
 $lang['locfiledit_restore'] = 'Restore het backup-bestand';
-$lang['locfiledit_restore_confirm'] = 'Aub bevestigen?
+$lang['locfiledit_restore_confirm'] = 'Aub bevestigen.
 Restore wordt pas effectief bij de volgende keer opslaan.';
 $lang['locfiledit_bak_loaded1'] = 'Backup-bestand geladen.';
-$lang['locfiledit_bak_loaded2'] = 'U moet het bestand opslaan om te kunnen restoren.';
-$lang['locfiledit_syntax_error'] = 'Syntax-fout! Bestand kan niet opgeslagen worden.';
+$lang['locfiledit_bak_loaded2'] = 'Je moet het bestand opslaan om te kunnen restoren.';
+$lang['locfiledit_syntax_error'] = 'Syntax-fout! Bestand kan niet worden opgeslagen.';
 $lang['locfiledit_new_tpl'] = 'Maak nieuw bestand aan';
 $lang['locfiledit_new_filename'] = 'Bestandsnaam';
 $lang['locfiledit_model'] = 'Model';
 $lang['locfiledit_empty_page'] = 'Lege pagina';
-$lang['locfiledit_parent_directory'] = 'Bovenliggende directory';
+$lang['locfiledit_parent_directory'] = 'Bovenliggende map';
 $lang['locfiledit_filename_error'] = 'Niet toegestane tekens in bestandsnaam.';
 $lang['locfiledit_file_already_exists'] = 'Bestand bestaat reeds.';
-$lang['locfiledit_model_error'] = 'U moet een model kiezen.';
-$lang['locfiledit_empty_filename'] = 'U moet een bestandsnaam opgeven.';
+$lang['locfiledit_model_error'] = 'Je moet een model kiezen.';
+$lang['locfiledit_empty_filename'] = 'Je moet een bestandsnaam opgeven.';
 $lang['locfiledit_webmaster_only'] = 'Alleen webbeheerders kunnen lokale bestanden aanmaken of wijzigen.';
-?>
