@@ -26,7 +26,7 @@ define('IN_ADMIN', true);
 include_once(PHPWG_ROOT_PATH . 'include/common.inc.php');
 include_once(LOCALEDIT_PATH.'include/functions.inc.php');
 load_language('plugin.lang', LOCALEDIT_PATH);
-check_status(ACCESS_ADMINISTRATOR);
+check_status(ACCESS_WEBMASTER);
 
 if (isset($_GET['file']))
 {

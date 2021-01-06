@@ -28,20 +28,11 @@ Description: Edit local files from administration panel
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=144
 Author: Piwigo team
 Author URI: http://piwigo.org
+Has Settings: webmaster
 */
 
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 define('LOCALEDIT_PATH' , PHPWG_PLUGINS_PATH . basename(dirname(__FILE__)) . '/');
-
-function localfiles_admin_menu($menu)
-{
-  $menu[] = array(
-    'NAME' => 'LocalFiles Editor',
-    'URL' => get_root_url().'admin.php?page=plugin-'.basename(dirname(__FILE__))
-    );
-  
-  return $menu;
-}
 
 function localfiles_css_link()
 {
@@ -65,6 +56,5 @@ function localfiles_css_link_prefilter($content, &$smarty)
   return preg_replace($search, $replacement, $content);
 }
 
-add_event_handler('get_admin_plugin_menu_links', 'localfiles_admin_menu');
 add_event_handler('loc_begin_admin', 'localfiles_css_link');
 ?>

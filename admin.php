@@ -27,6 +27,8 @@ include_once(LOCALEDIT_PATH.'include/functions.inc.php');
 load_language('plugin.lang', LOCALEDIT_PATH);
 $my_base_url = get_root_url().'admin.php?page=plugin-'.basename(dirname(__FILE__));
 
+check_status(ACCESS_WEBMASTER);
+
 // +-----------------------------------------------------------------------+
 // |                            Tabssheet
 // +-----------------------------------------------------------------------+
