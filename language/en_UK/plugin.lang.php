@@ -52,4 +52,5 @@ $lang['locfiledit_file_already_exists'] = 'File already exists.';
 $lang['locfiledit_model_error'] = 'You must choose a model.';
 $lang['locfiledit_empty_filename'] = 'You must enter the file name.';
 $lang['locfiledit_webmaster_only'] = 'Only webmasters can create or modify local files.';
+$lang['Customize CSS'] = 'Customize CSS';
 ?>

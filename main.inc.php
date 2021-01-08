@@ -34,27 +34,21 @@ Has Settings: webmaster
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 define('LOCALEDIT_PATH' , PHPWG_PLUGINS_PATH . basename(dirname(__FILE__)) . '/');
 
+add_event_handler('loc_end_themes_installed', 'localfiles_css_link');
 function localfiles_css_link()
 {
   global $template;
-  
+
+  load_language('plugin.lang', LOCALEDIT_PATH);
+
   $template->set_prefilter('themes', 'localfiles_css_link_prefilter');
 }
 
 function localfiles_css_link_prefilter($content, &$smarty)
 {
-  $search = '#{if isset\(\$theme.admin_uri\)}.*?{/if}#s';
-  $replacement = '
-{if isset($theme.admin_uri)}
-      <br><a href="{$theme.admin_uri}" class="tiptip" title="{\'Configuration\'|@translate}">{\'Configuration\'|@translate}</a>
-      | <a href="admin.php?page=plugin-LocalFilesEditor-css&amp;theme={$theme.id}">CSS</a>
-{else}
-      <br><a href="admin.php?page=plugin-LocalFilesEditor-css&amp;theme={$theme.id}">CSS</a>
-{/if}
-';
+  $search = '{if $theme.DEACTIVABLE}';
+  $replacement = '{if $theme.STATE eq "active"}<a href="admin.php?page=plugin-LocalFilesEditor-css&amp;theme={$theme.ID}" class="dropdown-option icon-brush">{\'Customize CSS\'|translate}</a>{/if}'.$search;
 
-  return preg_replace($search, $replacement, $content);
+  return str_replace($search, $replacement, $content);
 }
-
-add_event_handler('loc_begin_admin', 'localfiles_css_link');
 ?>
