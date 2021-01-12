@@ -50,4 +50,4 @@ $lang['locfiledit_file_already_exists'] = 'Файл уже существует.
 $lang['locfiledit_model_error'] = 'Выберите модель.';
 $lang['locfiledit_empty_filename'] = 'Заполните поле "Имя файла".';
 $lang['locfiledit_webmaster_only'] = 'Только вэбмастеры могут создавать или редактировать локальные файлы.';
-?>
+$lang['Customize CSS'] = 'Настройка CSS';
