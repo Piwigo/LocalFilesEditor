@@ -49,4 +49,4 @@ $lang['locfiledit_saved_bak'] = 'Cópia de segurança criada (%s)';
 $lang['locfiledit_show_default'] = 'Mostre o arquivo de referência:';
 $lang['locfiledit_syntax_error'] = 'Erro de sintaxe! O arquivo não pode ser salvo.';
 $lang['locfiledit_webmaster_only'] = 'Somente webmasters podem criar ou modificar arquivos locais.';
-?>
+$lang['Customize CSS'] = 'Personalizar CSS';
