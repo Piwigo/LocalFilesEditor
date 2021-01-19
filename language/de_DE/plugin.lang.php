@@ -50,3 +50,4 @@ $lang['locfiledit_file_already_exists'] = 'Datei ist bereits vorhanden.';
 $lang['locfiledit_model_error'] = 'Sie müssen ein Modell wählen.';
 $lang['locfiledit_empty_filename'] = 'Sie müssen einen Dateinamen eingeben.';
 $lang['locfiledit_webmaster_only'] = 'Nur Webmaster können lokale Dateien erstellen oder verändern.';
+$lang['Customize CSS'] = 'CSS Anpassen';
