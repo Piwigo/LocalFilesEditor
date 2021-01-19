@@ -51,4 +51,4 @@ $lang['locfiledit_file_already_exists'] = 'Súbor už existuje.';
 $lang['locfiledit_model_error'] = 'Musíte vybrať model.';
 $lang['locfiledit_empty_filename'] = 'Musíte zadať meno súboru.';
 $lang['locfiledit_webmaster_only'] = 'Len webmasteri môžu vytvoriť alebo modifikovať lokálne súbory.';
-?>
+$lang['Customize CSS'] = 'Prispôsobte si CSS';
