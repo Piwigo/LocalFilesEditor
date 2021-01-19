@@ -1,1 +1,1 @@
-Edita els teus arxius locals des del panell d'administració.
+Edita els teus fitxers locals des del panell d'administració.

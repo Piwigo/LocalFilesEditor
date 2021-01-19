@@ -50,4 +50,4 @@ $lang['locfiledit_saved_bak'] = 'Arxiu de còpia de seguretat creat el (%s)';
 $lang['locfiledit_show_default'] = 'Visualitza el fitxer de referència:';
 $lang['locfiledit_syntax_error'] = 'Error de sintaxi! L\'arxiu s\'ha pogut desar.';
 $lang['locfiledit_webmaster_only'] = 'Només els administradors web poden crear o modificar arxius locals.';
-?>
+$lang['Customize CSS'] = 'Personalitza el CSS';
