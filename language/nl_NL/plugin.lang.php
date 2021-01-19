@@ -51,3 +51,4 @@ $lang['locfiledit_file_already_exists'] = 'Bestand bestaat reeds.';
 $lang['locfiledit_model_error'] = 'Je moet een model kiezen.';
 $lang['locfiledit_empty_filename'] = 'Je moet een bestandsnaam opgeven.';
 $lang['locfiledit_webmaster_only'] = 'Alleen webbeheerders kunnen lokale bestanden aanmaken of wijzigen.';
+$lang['Customize CSS'] = 'Aanpassen CSS ';
