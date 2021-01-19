@@ -51,4 +51,4 @@ $lang['locfiledit_file_already_exists'] = 'Fails jau eksiste.';
 $lang['locfiledit_model_error'] = 'Jums jaizvelas modelis.';
 $lang['locfiledit_empty_filename'] = 'Jums jaieraksta faila nosaukums.';
 $lang['locfiledit_webmaster_only'] = 'Tikai webmasters var izveidot un modificet lokalos failus.';
-?>
+$lang['Customize CSS'] = 'Pielāgot CSS';
