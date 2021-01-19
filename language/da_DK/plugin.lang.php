@@ -50,4 +50,4 @@ $lang['locfiledit_model'] = 'Model';
 $lang['locfiledit_new_filename'] = 'Filnavn';
 $lang['locfiledit_parent_directory'] = 'Overordnet mappe';
 $lang['locfiledit_webmaster_only'] = 'Kun webmastere kan oprette eller ændre lokale filer.';
-?>
+$lang['Customize CSS'] = 'Tilpas CSS';
