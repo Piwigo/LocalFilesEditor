@@ -50,3 +50,4 @@ $lang['locfiledit_choose_file'] = 'Aukeratu editatu nahi duzun fitxategia';
 $lang['locfiledit_cant_save'] = 'Uneko fitxategia ezin daiteke idatzi. Egiaztatu "local/" direktorioan idatz daitekeen (chmod).';
 $lang['locfiledit_bak_loaded2'] = 'Fitxategia leheneratzeko aurretik gorde egin behar duzu.';
 $lang['locfiledit_bak_loaded1'] = 'Babeskopia-fitxategia kargatuta';
+$lang['Customize CSS'] = 'Pertsonalizatu CSS';
