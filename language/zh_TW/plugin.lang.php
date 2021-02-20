@@ -50,4 +50,4 @@ $lang['locfiledit_file_already_exists'] = '檔案已存在';
 $lang['locfiledit_model_error'] = '你必須選擇模式';
 $lang['locfiledit_empty_filename'] = '你必須輸入檔名';
 $lang['locfiledit_webmaster_only'] = '只有網頁管理員才能建立或修改本地文件';
-?>
+$lang['Customize CSS'] = '自訂 CSS';
