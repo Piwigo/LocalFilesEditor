@@ -50,4 +50,4 @@ $lang['locfiledit_onglet_localconf'] = 'Local config';
 $lang['locfiledit_onglet_plug'] = 'Osebni vtičnik';
 $lang['locfiledit_onglet_tpl'] = 'Predloge';
 $lang['locfiledit_parent_directory'] = 'Nadrejeni direktorij';
-?>
+$lang['Customize CSS'] = 'Prilagodi CSS';
