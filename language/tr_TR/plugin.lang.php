@@ -52,4 +52,4 @@ $lang['locfiledit_file_already_exists'] = 'Bu dosya zaten var.';
 $lang['locfiledit_model_error'] = 'Bir model seçmelisiniz.';
 $lang['locfiledit_empty_filename'] = 'Dosya ismini girmelisiniz.';
 $lang['locfiledit_webmaster_only'] = 'Sadece yöneticiler yerel dosyaları yaratabilir veya değiştirebilir.';
-?>
+$lang['Customize CSS'] = 'css\'yi özelleştir';
