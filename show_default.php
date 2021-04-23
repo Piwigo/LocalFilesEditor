@@ -28,14 +28,16 @@ include_once(LOCALEDIT_PATH.'include/functions.inc.php');
 load_language('plugin.lang', LOCALEDIT_PATH);
 check_status(ACCESS_WEBMASTER);
 
+check_input_parameter('file', $_GET, false, '/^(include\/config_default\.inc\.php|language\/[a-z]+_[A-Z]+\/(common|admin)\.lang\.php)$/');
+
 if (isset($_GET['file']))
 {
   $path = $_GET['file'];
-  if (!is_admin() or (!substr_count($path, 'config_default.inc.php') and !substr_count($path, '.lang.php')))
+  if (!is_admin())
   {
   	die('Hacking attempt!');
   }
-    
+
   $template->set_filename('show_default', dirname(__FILE__) . '/template/show_default.tpl');
   
   $file = file_get_contents(PHPWG_ROOT_PATH . $path);
