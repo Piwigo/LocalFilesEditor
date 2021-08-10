@@ -49,4 +49,4 @@ $lang['locfiledit_onglet_localconf'] = 'ಲೋಕಲ್ ಕಾನ್ಫಿಗ್
 $lang['locfiledit_onglet_plug'] = 'ವೈಯಕ್ತಿಕ ಪ್ಲಗ್ ಇನ್ ';
 $lang['locfiledit_onglet_tpl'] = 'ನಮೂನೆಗಳು';
 $lang['locfiledit_parent_directory'] = 'ಪೇರೆಂಟ್ ಡೈರೆಕ್ಟರಿ';
-?>
+$lang['Customize CSS'] = 'CSS ಅನ್ನು ಒಗ್ಗಿಸಿ';
