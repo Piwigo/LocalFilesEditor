@@ -50,4 +50,4 @@ $lang['locfiledit_empty_filename'] = 'Ret eo deoc\'h lakaat anv ar restr.';
 $lang['locfiledit_empty_page'] = 'Pajennad goullo';
 $lang['locfiledit_file_already_exists'] = 'Bez zo ar restr-mañ dija.';
 $lang['locfiledit_filename_error'] = 'Arouezennoù berzet a zo e anv ar restr.';
-?>
+$lang['Customize CSS'] = 'Personelaat ar CSS';
