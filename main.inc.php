@@ -44,9 +44,9 @@ function localfiles_css_link()
   $template->set_prefilter('themes', 'localfiles_css_link_prefilter');
 }
 
-function localfiles_css_link_prefilter($content, &$smarty)
+function localfiles_css_link_prefilter($content)
 {
-  $search = '{if $theme.DEACTIVABLE}';
+  $search = '{if isset($theme.DEACTIVABLE) and $theme.DEACTIVABLE}';
   $replacement = '{if $theme.STATE eq "active"}<a href="admin.php?page=plugin-LocalFilesEditor-css&amp;theme={$theme.ID}" class="dropdown-option icon-brush">{\'Customize CSS\'|translate}</a>{/if}'.$search;
 
   return str_replace($search, $replacement, $content);
