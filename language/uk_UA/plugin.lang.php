@@ -50,4 +50,4 @@ $lang['locfiledit_save_file'] = 'Зберегти файл';
 $lang['locfiledit_show_default'] = 'Показати посилання на файл:';
 $lang['locfiledit_syntax_error'] = 'Синтаксична помилка! Файл не може бути збережений.';
 $lang['locfiledit_webmaster_only'] = 'Тільки веб-майстри можуть створювати або змінювати локальні файли.';
-?>
+$lang['Customize CSS'] = 'Налаштувати CSS';
