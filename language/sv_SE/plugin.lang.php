@@ -50,3 +50,4 @@ $lang['locfiledit_file_already_exists'] = 'Filen existerar redan.';
 $lang['locfiledit_model_error'] = 'Du måste välja en modell.';
 $lang['locfiledit_empty_filename'] = 'Du måste välja ett filnamn.';
 $lang['locfiledit_webmaster_only'] = 'Endast webmasters kan skapa eller ändra lokala filer.';
+$lang['Customize CSS'] = 'Anpassa CSS';
