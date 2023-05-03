@@ -50,4 +50,4 @@ $lang['locfiledit_saved_bak'] = 'Varmuuskopio luotu (%s)';
 $lang['locfiledit_show_default'] = 'Näytä referenssitiedosto:';
 $lang['locfiledit_syntax_error'] = 'Syntaksivirhe! Tiedostoa ei voida tallentaa.';
 $lang['locfiledit_webmaster_only'] = 'Vain webmasterit voivat luoda ja muuttaa paikallisia tiedostoja.';
-?>
+$lang['Customize CSS'] = 'Muokkaa CSS:ää';
