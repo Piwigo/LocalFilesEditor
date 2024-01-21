@@ -50,4 +50,4 @@ $lang['locfiledit_saved_bak'] = 'Varukoopia loomine (%s)';
 $lang['locfiledit_show_default'] = 'Kuva etalon-faili:';
 $lang['locfiledit_syntax_error'] = 'Süntaksiviga! Faili ei salvestatud.';
 $lang['locfiledit_webmaster_only'] = 'Ainult veebimeistrid võivad luua või muuta kohalike faile.';
-?>
+$lang['Customize CSS'] = 'Kohandage CSS-i';
