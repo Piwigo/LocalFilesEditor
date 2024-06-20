@@ -50,4 +50,4 @@ $lang['locfiledit_file_already_exists'] = '文件已存在。';
 $lang['locfiledit_model_error'] = '您必须选择一个模块。';
 $lang['locfiledit_empty_filename'] = '您必须填写文件名。';
 $lang['locfiledit_webmaster_only'] = '只有站长才能创建或修改本地文件。';
-?>
+$lang['Customize CSS'] = '自定义CSS';
