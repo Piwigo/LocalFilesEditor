@@ -50,3 +50,4 @@ $lang['locfiledit_saved_bak'] = 'Архивно копие е създадено
 $lang['locfiledit_show_default'] = 'Покажи референтния файл:';
 $lang['locfiledit_syntax_error'] = 'Синтактична грешка! Файлът не може да бъде записан.';
 $lang['locfiledit_webmaster_only'] = 'Само уебмастъри могат да създават и променят локални файлове.';
+$lang['Customize CSS'] = 'Къстъмизирайте CSS';
